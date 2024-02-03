@@ -1,0 +1,48 @@
+DIV { 
+    border: 1px solid #000;
+}
+
+#Header {
+	height: 100px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto; 
+	background: url(images/banner.png) no-repeat;
+	color:  red;
+}
+
+#MainContent {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#Footer {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 50px;
+	border: 1px solid #fff;
+}
+
+#FooterLeft {
+	float: left;
+	width: 399px; /*49.5%*/
+	height: 50px;
+	border: 1px solid green;
+}  
+
+#FooterRight {
+	float: right;
+	width: 380px; /*49.5%*/
+	height: 50px;
+	border: 1px solid red;
+}
+
+.button-container {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}

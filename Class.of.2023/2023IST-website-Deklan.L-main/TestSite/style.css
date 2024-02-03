@@ -1,0 +1,88 @@
+BODY {
+	font-family: 'IBM Plex Serif', serif;
+}
+DIV {
+	border: 1px solid #000000;
+}
+
+#header {
+	height: 100px;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	background: url(images/banner.png) no-repeat;
+	color: red;
+}
+#MainContent {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#Footer {
+	width: 802px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 50px;
+}
+#FooterLeft {
+	float:left;
+	width:49.5%;
+	height:50px;
+	border: 1px solid green;
+}
+#FooterRight {
+	float: right;
+	width:49.5%;
+	height:50px;
+	border: 1px solid red;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'IBM Plex Serif', serif;
+}
+
+.button-container{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.button{
+	appearance: none;
+	border: none;
+	background:none;
+	outline: none;
+	cursor: pointer;
+
+	padding: 20px 40px;
+	border-radius: 8px;
+	color: #212121;
+	font-size: 28px;
+	font-weight: 600;
+	margin: 0 15px;
+	transition: 2s;
+	isolation: isolate;
+}
+.button-1{
+	color: #FAB000;
+	border: 3px solid #FAB000;
+	
+}
+
+
+.button-1:hover{
+	transform-origin: 0 100% ;
+	transform: scaley(0.05);
+	background: currentcolor;
+	mix-blend-mode: difference;
+	transition: transform .25s;
+	content: ''
+}
+
+&:focus {outline: none}
+&:focus, &:hover { &::after{transform: none}}
+	

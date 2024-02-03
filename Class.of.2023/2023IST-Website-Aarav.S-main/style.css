@@ -1,0 +1,50 @@
+.p .h5 .h4 .h3 .h2 .h1 .a .label .span .button {	
+font-family: 'Shantell Sans', cursive;
+}
+h1 {
+	text-align: center;
+  }
+card {
+	min-width: 12rem;
+	object-fit: contain;
+}
+img {
+	width: 100% ;
+	height: fit-content;
+	position: auto;
+}
+div.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  }
+div.sharecard {
+	margin-left: auto; 
+	margin-right: auto; 
+
+}
+div.donatecard {
+	margin-left:auto; 
+	margin-right: auto;
+
+}
+.bodyimg {
+	margin-top:0cm; 
+	border: 5px solid white;
+	height: 80%; 
+	width: 80%;
+	margin-left: 10%
+}
+
+@media (min-width: 0px) {
+  p { font-size: 1rem; }
+}
+
+@media (min-width: 400px) {
+  p { font-size: calc(1rem + 1vw); }
+}
+
+@media (min-width: 1001px){
+  p { font-size: 1.25rem; }
+}
+

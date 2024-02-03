@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
+BODY {
+	font-family: 'Shantell Sans', cursive;
+	}
+
+DIV {
+	border: 1px solid #000000 ;
+	}
+	
+#Header {
+	height: 100px;
+	width: 800px;
+	margin-right: auto ;
+	margin-left: auto;
+	background: url(images/banner.png) no-repeat;
+	}
+
+#MainContent {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+#Footer {
+	width: 802px;
+	margin-right: auto;
+	margin-left: auto;
+	height:50px;
+	}
+##FooterLeft {
+	float:left;
+	width:0.5vw;
+	height:50px;
+	border: 1px solid green;
+}
+
+#FooterRight {
+	float:right;
+	width:0.5vw;
+	height:50px;
+	border: 1px solid red;
+}
+	
+.button-container {
+	display: flex;
+	width: 100%; 
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.button { 
+appearance: none;
+background: none;
+border: none;
+outline: none;
+cursor: pointer;
+
+padding: 20px 40px;
+border-radius: 8px;
+color: #212121;
+font-size; 28px;
+font-weight: 600;
+margin: 0 15px;
+transition: 0.4s;
+}
+
+.button-1 {
+	color: #FFCE00;
+	border: 3px solid #FFCE00;
+}
+
+.button-1:hover {
+color: #FFF;
+background-color: #FFCE00;
+} 
+
+.button-2 {
+color: #FE4880;
+border: 3px solid #FE4880;
+background-image: linear-gradient(to right, transparent 50%, #FE4880 50%);
+background-size: 200%;
+background-position: 0%;
+}
+
+.button-2:hover {
+color: #FFF;
+background-position: 100%;
+}	
+	
+@media only screen and (max-width:998px) {
+	#Footer, #MainContent, #Header {
+		width:100%;
+	}
+}

@@ -1,0 +1,11 @@
+h1 {
+	text-align: center;
+  }
+card {
+	min-width: 12rem;
+	object-fit: contain;
+}
+img {
+	width: 100% ;
+	height: fit-content;
+}

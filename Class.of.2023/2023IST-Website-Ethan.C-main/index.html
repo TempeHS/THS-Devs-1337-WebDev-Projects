@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awake's Valorant Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="icon" type="image/png" href="https://github.com/TempeHS/2023IST-Website-Ethan.Cao/blob/main/images/Favicon.png?raw=true">
+  </head>
+  <body>
+<style>
+body {
+      background-color: black;
+    }
+.container {border:1px solid white;}
+.border {border:1px solid black;}
+.navbar-brand img {height:60px}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button-1 {
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	
+	padding: 10px 20px;
+	border-radius: 2px;
+	color: #212121;
+	font-size: 15px;
+	font-weight: 600;
+	margin: 0 5px;
+	transition: 0.4s;
+}
+
+.button-1 {
+	color: #FFFFFF;
+	border: 3px solid #AD1520;
+}
+
+.button-1:hover {
+	color: #FFF;
+	background-color: #AD1520;
+}
+
+.card {
+	border: 0px;
+}
+
+.card2 {
+	background: white;
+
+}
+
+.button-2 {
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	
+	padding: 10px 20px;
+	border-radius: 2px;
+	color: #212121;
+	font-size: 11px;
+	font-weight: 600;
+	margin: 0 5px;
+	transition: 0.4s;
+}
+
+.button-2 {
+	color: #000000;
+	border: 3px solid #AD1520;
+}
+
+.button-2:hover {
+	color: #000000;
+	background-color: #AD1520;
+
+}
+ @media (max-width: 1000px) {
+    .col-md-5 {
+      display: none;
+    }
+
+    .col-md-7 {
+      width: 100%;
+    }
+  }
+
+.navbar {
+  border: dark;
+}
+
+</style>
+<!-- NAVBAR STARTS HERE -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="#">
+    <img src="https://github.com/TempeHS/2023IST-Website-Ethan.Cao/blob/main/images/logo.png?raw=true" alt="Logo" style="margin-left: 10px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="container d-flex align-items-center">
+      <div class="navbar-nav flex-grow-1 justify-content-center">
+        <a class="nav-link active" href="#">Home</a>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Aim Routine
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.3daimtrainer.com/valorant-aim-trainer-guide-tips/" target="_blank">Training</a></li>
+            <li><a class="dropdown-item" href="https://senpai.gg/blog/best-warm-up-routine-for-valorant/" target="_blank">Warm Up</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://example.com/" target="_blank">Select Your Rank</a></li>
+          </ul>
+        </div>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Movement
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.sportskeeda.com/valorant/valorant-movement-guide-7-tips-improve-gunfight-skills-2022" target="_blank">Training</a></li>
+            <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=dKGH6ABxQcU" target="_blank">Getting It Right</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://example.com/" target="_blank">Select Your Agent</a></li>
+          </ul>
+        </div>
+        <a class="nav-link" href="https://earlygame.com/how-to-get-better-at-valorant-part-2-map-knowledge-ability-lineups" target="_blank">Map Knowledge</a>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Other
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" onclick="scrollToCoaching()">Coaching</a></li>
+            <li><a class="dropdown-item" href="https://www.thegamer.com/valorant-improve-your-rank-best-tips-tricks/" target="_blank">Rank Tips</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" onclick="scrollToContact()">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  function scrollToCoaching() {
+    // Scroll to the "Coaching" container
+    document.getElementById("Coaching").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+
+  function scrollToContact() {
+    // Scroll to the "Contact" container
+    document.getElementById("Contact").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<!-- NAVBAR ENDS HERE -->
+
+<!-- HOME COVER VIDEO STARTS HERE -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <video autoplay muted loop
+		<video id="videobcg">
+          <source src="https://github.com/TempeHS/2023IST-Website-Ethan.Cao/raw/main/FrontCover.mp4" type="video/mp4"></source>
+        </video>
+		 <div class="video-overlay">
+            <b><h2 class= <h2 class="text-center" style="font-size: 70px; font-family: Visby, medium; color: red;">Awake's Guide</h2></b>
+			<div class="button-container">
+			<center>
+		<button class="button button-1" onclick="scrollToCoaching()">Coaching</button>
+
+<script>
+  function scrollToCoaching() {
+    // Scroll to the "Coaching" container
+    document.getElementById("Coaching").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<button class="button button-1" onclick="scrollToOptions()">Explore Our Options</button>
+
+<script>
+  function scrollToOptions() {
+    // Scroll to the "Options" container
+    document.getElementById("Options").scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+</script>
+
+		</center>
+        </div>
+          </div>
+        </div>
+		</div>
+		</div>
+		</div>
+<!-- HOME COVER VIDEO ENDS HERE -->
+
+<!-- CARD ROW STARTS HERE (DECORATION) -->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col">
+	  <div class="card">
+<br>
+<br>     
+</div>
+</div>
+</div>
+</div>
+<!-- CARD ROW ENDS HERE (DECORATION) -->
+
+ <!-- FEATURES START HERE -->
+<div class="container-fluid">
+  <div class="background" style="background-image: url(https://images.unsplash.com/photo-1638184984605-af1f05249a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxsX3B5UjBUVjVEVXx8ZW58MHx8fHx8&w=1000&q=80);">
+    <center>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1" style="direction: ltr; text-align: center; font-size: 30px; font-family: Visby, medium; color: white;">Get the Latest Advice</h2>
+          <span style="font-size: 20px; font-family: Visby, medium; color: red;">Are you ready?</span>
+          <br>
+          <br>
+          <p class="lead" style="direction: ltr; text-align: left; font-size: 20px; font-family: DM-sans, medium; color: white;">Whether you're a new player or a seasoned veteran, Awake's Valorant Guide offers the advice and guidance you need to improve and become a valuable team player. As a top-ranked player in CRK and Arsenal, and a friend to many top 500 Radiant/Ex-Pro players in Valorant, the author of this guide offers an unparalleled level of experience and insight into the game. So what are you waiting for?</p>
+        </div>
+        <div class="col-md-5" style="direction: ltr; text-align: left;">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://www.riotgames.com/darkroom/1440/d0807e131a84f2e42c7a303bda672789:3d02afa7e0bfb75f645d97467765b24c/valorant-offwhitelaunch-keyart.jpg" width="500" height="500" alt="Image" style="display: block;">
+          <br>
+          <br>
+        </div>
+      </div>
+    </center>
+  </div>
+</div>
+    <!-- END THE FEATURES -->
+
+<!-- THREE COLUMNS OF TEXT STARTS HERE -->
+<div class="container-fluid">
+<div class="border-top">
+<div class=background id=Options style="background-image: url(https://rare-gallery.com/uploads/posts/356101-4k-wallpaper.jpg);">
+<br>
+<center>
+    <div class="row">
+      <div class="col-lg-4" style="direction: ltr;"></span>
+        <img class="bd-placeholder-img rounded-circle" src="https://valorantinfo.com/images/us/potato-aim-spray_valorant_icon_3857.webp" width="140" height="140" alt="Placeholder">
+        <h2 class="fw-normal" _msttexthash="97565" _msthash="29" style="font-size: 30px; font-family: Visby, medium; color: red;"> Aim Routine</h2>
+        <p _msttexthash="23917322" _msthash="30" style="font-size: 20px; font-family: DM-sans, medium; color: white;"> Discover the secrets to enhancing your aim and precision in Valorant with our comprehensive aim routine content. Unleash your full potential by mastering the art of analysis, composition, and logical reasoning in your gameplay. Elevate your skills and dominate the competition with our invaluable insights and strategies tailored for Valorant players.</p>
+        <p><a class="btn btn-secondary" href="https://www.3daimtrainer.com/valorant-aim-trainer-guide-tips/" target="_blank" _msttexthash="177125" _msthash="31">Aim Here</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4" style="direction: ltr;">
+		<img class="bd-placeholder-img rounded-circle" src="https://www.mandatory.gg/wp-content/uploads/valorant-agent-neon-skills-high-gear.png" width="140" height="140" alt="Placeholder">        <h2 class="fw-normal" _msttexthash="206648" _msthash="34"style="font-size: 30px; font-family: Visby, medium; color: red;"> Movement</h2>
+        <p _msttexthash="79648907" _msthash="35" style="font-size: 20px; font-family: DM-sans, medium; color: white;"> Take your movement skills in Valorant to the next level with our exclusive content dedicated to perfecting your agility and mobility. Learn essential techniques and strategies to outmaneuver your opponents, gain a tactical advantage, and navigate the game's dynamic environments with finesse. Elevate your gameplay and become a force to be reckoned with by mastering the art of movement in Valorant.</p>
+        <p><a class="btn btn-secondary" href="https://www.youtube.com/watch?v=dKGH6ABxQcU" target="_blank"_msttexthash="177125" _msthash="36"> Master that Agent</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4" style="direction: ltr;">
+		<img class="bd-placeholder-img rounded-circle" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/valorant/a/a8/Lotus_Banner.JPG" width="140" height="140" alt="Placeholder">        <h2 class="fw-normal" _msttexthash="1228162" _msthash="39" style="font-size: 30px; font-family: Visby, medium; color: red;"> Map Knowledge</h2>
+        <p _msttexthash="60310016" _msthash="40" style="font-size: 20px; font-family: DM-sans, medium; color: white;"> Unleash your potential in Valorant through comprehensive map knowledge. Our specialised content equips you with in-depth insights, strategic positioning, and a deep understanding of each map's intricacies. Enhance your game sense, exploit advantageous locations, and make informed decisions that will lead you to victory. Elevate your gameplay by mastering map knowledge and gain a competitive edge in Valorant's dynamic battles.</p>
+                <p><a class="btn btn-secondary" href="https://earlygame.com/how-to-get-better-at-valorant-part-2-map-knowledge-ability-lineups" target="_blank"_msttexthash="177125" _msthash="36"> Imagine Studying</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+	</div>
+	</div>
+	</div>
+	</center>
+	
+<!-- THREE COLUMNS OF TEXT ENDS HERE -->
+
+<!-- VIDEO 2 STARTS HERE -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="card bg-secondary text-white">
+        <video autoplay muted loop id="videobcg">
+          <source src="https://github.com/TempeHS/2023IST-Website-Ethan.Cao/raw/main/SecondGraph.mp4" type="video/mp4"></source>
+        </video>
+        <div class="video-overlay">
+          <h2 class="text-center" style="font-size: 70px; font-family: Visby, medium; color: white;">"Why are you Asleep?"</h2>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Welcome to Our Website</h5>
+          <p class="card-text">We are passionate about helping gamers improve their skills and achieve their goals in Valorant. Our team of experienced coaches is dedicated to providing top-quality coaching and training programs for players of all levels.</p>
+          <p class="card-text">Whether you're a beginner looking to learn the basics or a professional player aiming to level up your team, we have the right coaching options for you. Explore our courses and start your journey to becoming a better Valorant player today.</p>
+          <a href="https://valorantforums.com/" target="_blank" class="btn btn-secondary" style="background-color: black;">Visit Our Forum</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO 2 ENDS HERE -->
+
+<!-- COACHING OPTIONS STARTS HERE -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="border-top">
+          <div class="background" id="Coaching" style="background-image: url(https://rare-gallery.com/uploads/posts/356101-4k-wallpaper.jpg);">
+            <div class="container-black px-4 py-5" id="custom-cards">
+              <center>
+                <h2 class="pb-2 border-bottom-black" style="font-size: 30px; font-family: Visby, medium; color: white;">Explore Our Coaching Options</h2>
+              </center>
+              <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(https://staticg.sportskeeda.com/editor/2021/06/ea8b1-16243848051008-800.jpg);">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                      <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Beginner Course</h3>
+                      <ul class="d-flex list-unstyled mt-auto">
+                        <li class="d-flex align-items-center me-3">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                          <small>Master the basics</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                          <small></small>
+                        </li>
+                      </ul>
+                      <button class="btn btn-danger btn-centered" onclick="openNewTab('https://www.youtube.com/watch?v=BTYXjzR79Rk')">Learn More</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/LGD_Gaming_at_the_2015_LPL_Summer_Finals.jpg/800px-LGD_Gaming_at_the_2015_LPL_Summer_Finals.jpg);">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                      <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Amateur Course</h3>
+                      <ul class="d-flex list-unstyled mt-auto">
+                        <li class="d-flex align-items-center me-3">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                          <small>Improve your skills</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                          <small></small>
+                        </li>
+                      </ul>
+                      <button class="btn btn-danger btn-centered" onclick="openNewTab('https://www.youtube.com/watch?v=-ajRzlu4iJA')">Learn More</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url(https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/dataimagejpegbase649j4QBkRXhpZgAATU0AKgAAAAgAAwE7A-4ed34bed1a9183c779b92b6dfb40a9ee.jpg);">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                      <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Professional Course</h3>
+                      <ul class="d-flex list-unstyled mt-auto">
+                        <li class="d-flex align-items-center me-3">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                          <small>Level up your team</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                          <small></small>
+                        </li>
+                      </ul>
+                      <button class="btn btn-danger btn-centered" onclick="openNewTab('https://www.youtube.com/watch?v=C8OrVudVtQ0')">Learn More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COACHING OPTIONS ENDS HERE -->
+
+ <!-- VALORANT RESOURCES STARTS HERE -->
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="text-white">
+        <div class="bg-dark">
+          <div class="border-top">
+            <div class="background" style="background-image: url(https://wallpapercave.com/wp/wp6853115.png);">
+              <br>
+              <div style="margin-left: 20px;">
+                <h3 class="text-center" style="font-size: 35px; font-family: Visby, medium; color: red;">Valorant Resources</h3>
+              </div>
+              <br>
+
+              <div class="row">
+                <div class="col">
+                  <div class="border p-4">
+                    <p style="font-family: DM Sans;">
+                      Hey there, I see you've stumbled upon my Valorant Guide. This epic website has all the resources and information you need, so look no further...
+                    </p>
+                    <p>Check out these cool resources:</p>
+                    <ul class="list-unstyled">
+                      <li><a href="https://tracker.gg/valorant" target="_blank">Tracker.gg</a></li>
+                      <li><a href="https://www.youtube.com/channel/UCx0qCryognOczd5HN6ElI-w" target="_blank">ProGuides</a></li>
+                      <li><a href="https://www.proguides.com/courses/valorant" target="_blank">Master Course</a></li>
+                      <li><a href="https://www.gameleap.com/valorant" target="_blank">GameLeap</a></li>
+                      <li><a href="https://valorfeed.gg/guides" target="_blank">Valorfeed</a></li>
+                    </ul>
+                    <p>Be sure to save these websites so you can climb the ranks.</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/V8bhudoy39w" title="YouTube video" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <center>
+               <p>Not sure how to start levelling up? Click here.</p>
+<div class="button-container">
+  <button class="button button-1" onclick="openYouTubeVideo()">Get Started</button>
+</div>
+
+<script>
+  function openYouTubeVideo() {
+    window.open('https://www.youtube.com/watch?v=S-rxwnC7ygg', '_blank');
+  }
+</script>
+              </center>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- VALORANT RESOURCES ENDS HERE -->
+ 
+ <!-- FOOTER-->
+<footer class="container-fluid bg-dark text-white" id="Contact">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="text-center">
+        <h3>Stay Connected</h3>
+        <p>Follow us on social media to stay updated with the latest news and updates.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-center">
+        <h3>Contact Information</h3>
+        <p>For any inquiries or questions, you can reach out to us using the following information:</p>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+          <li><i class="fas fa-envelope"></i> info@example.com</li>
+          <li><i class="fas fa-phone"></i> +123456789</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <p>&copy; 2023 Awake's Valorant Guide. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- END OF FOOTER-->
+ 
+<!-- DO NOT EDIT BELOW THIS LINE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

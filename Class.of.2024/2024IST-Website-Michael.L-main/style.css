@@ -1,0 +1,16 @@
+
+#MainContent {
+	width: 1500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.button-container {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+

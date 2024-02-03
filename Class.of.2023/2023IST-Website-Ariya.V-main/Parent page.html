@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Parents</title>
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- FAVICON CODE STARTS HERE -->
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- FAVICON CODE ENDS HERE -->
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+<div class="container">
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+ <div class="col-4 pt-1">
+		<a class="btn btn-sm btn-dark" href="Subscribe page.html">Subscribe</a>
+      </div>
+      <div class="col-4 text-center">
+        <h1 class="blog-header-logo text-body-emphasis" >Parent Assisting Strategies</h1>
+      </div>
+       <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-dark" href="sign-in index.html">Sign in</a>
+		<a class="btn btn-sm btn-outline-secondary" href="index.html">Home</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Support your kids going through the HSC</h1>
+      <p class="lead my-3">Your child may feel an enormous amount of pressure about the HSC. As a parent or carer you play an important role in giving them the confidence, support and stability to cope with their final exams. Here are some ideas for supporting them.</p>
+      <p class="lead mb-0"><a href="https://education.nsw.gov.au/student-wellbeing/stay-healthy-hsc/resources/tips-to-support-your-kids" class="text-white fw-bold">Continue reading...</a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Ways to help your child effectively study</h3>
+          <div class="mb-1 text-body-secondary">Nov 12</div>
+          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="https://education.nsw.gov.au/student-wellbeing/attendance-behaviour-and-engagement/behaviour-support-toolkit/support-for-parents/available-support" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img width="200" height="250" src="https://img.freepik.com/premium-vector/parent-help-teach-kid_97632-869.jpg" role="img"  preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/></img>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">NSW</strong>
+          <h3 class="mb-0">Engaging with your child's highschool</h3>
+          <div class="mb-1 text-body-secondary">Dec 1</div>
+          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="https://education.nsw.gov.au/parents-and-carers/going-to-school/preparing/starting-high-school/feedback-for-your-high-school" class="stretched-link">Continue reading</a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img  width="200" height="250" src="https://www.parentingforbrain.com/wp-content/uploads/family-engagement.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Our Tips and Strategies
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1">Tips for Parents to Help Your Child Develop Effective Study Skills</h2>
+        <p class="blog-post-meta">January 1, 2023 by <a href="https://blog.edmentum.com/"></a>Edmentum</p>
+
+        <p>Here’s the situation: Your child likes school. They enjoy their classes, teachers, and fellow students. They do their homework every night. They’re trying hard—but that effort and enthusiasm just isn’t translating to the kind of academic gains and grades you both want to see. If this sounds familiar to you, the key to helping your child crack the code on learning may be to focus on building some effective study skills.</p>
+       
+	<h3> 1. Create a designated study space for your students </h3>
+ <p>Does your child have their own desk or workspace in an area of your home that is conducive to focused studying? Ask yourself if it’s well-lit and away from other distractions. Keep helpful study supplies on hand in this area, like colorful post-its, a variety of pens and pencils, highlighters, and scratch paper. Encourage your child to take ownership over the area by giving them freedom to decorate, and teach them to neaten up and organize their desk each night so they’re ready to get to work when it comes time for the next study session.
+		</p>
+	<h3> 2. Keep a planner </h3>
+ <p> Time management is an incredibly important aspect of effective study skills. So, ensure your student knows how to keep a homework planner. Have them write down important due dates for homework and projects, especially if their teacher makes these dates known far in advance. Then, the key is to stay on top of these assignments. Prepare for important tests by helping your child break down the content and make a schedule for reviewing the material in the days leading up to the test. Break down big projects similarly by determining smaller milestones and working with your child to make a schedule for when they will have these components complete. This can offset cramming and procrastination (and build confidence in the process) by making their workload feel more manageable.
+ </p>
+ <h3> 3. Take effective notes </h3>
+ <p>Have you heard of Cornell Notes? Utilizing this classic note-taking system can help your child process information taught in class and truly retain what they’ve learned. There are even studies showing that writing notes out by hand results in better retention than not taking any notes or using a laptop. Teaching your child to use active reading strategies—like taking notes or highlighting key themes and passages—is also very helpful for retention.
+ </p>
+<h3> 4. Practice for tests </h3>
+ <p>Simply reviewing content before a test isn’t necessarily the best method to ensure your child is prepared for an upcoming test. Instead, encourage them to try more interactive approaches, like completing practice tests or using flash cards. Asking your child review questions and having them provide short essay-style explanations aloud can also be a great strategy to make sure they truly understand the material.
+ </p>
+ <h3>5. Avoid cramming</h3>
+ <p>Studying a little bit of a subject every day is much better for long-term retention than studying for a longer period of time a single day. Help your student structure a study schedule that will allow them to space out their practice on different subjects—as little as 10 minutes of practice a day can help! It’s also important to encourage your student to break up their studying with smart breaks. Taking a 15-minute break once every hour can work wonders on keeping them focused and productive.
+ </p>
+  <h3>6. Teach your child to ask for help</h3>
+ <p>Perhaps your student is struggling with understanding a specific lesson in a particular subject or doesn’t quite understand the night’s homework assignment. When this is the case (and it happens to everyone at some point or another) asking for help is key. Teach your student how to bring up challenges early with a teacher and ask for help—and don’t be afraid to bring up concerns with their teacher yourself either. Teaching your child how to build effective working relationships with other students and asking their peers for help is another important lesson in asking for, receiving, and offering support.
+ </p>
+  <h3>7. Avoid distraction</h3>
+ <p>Teach your student how to put their computer away and turn off all other devices that may serve as a form of distraction while they’re studying. Multi-tasking also takes away from learning, so encourage your child to focus on a single subject for a sustained period of time before moving onto another subject. And above all, ensure that your child has healthy sleeping and eating habits in order to maximize their focus and make the most of time spent studying.
+ </p>
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">About</h4>
+          <p class="mb-0">Educational Space for parents is a tool for parents to assist their child in their learning career. Through various techniques and tips, parents will be able to support and assist their child in all the ways possible. </p>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Additional Pages</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="file:///G:/Shared%20drives/2023%20Information%20Software%20Technology/Ariya.Vongsaiya/MyFirstWebsite/2023IST-Website-Ariya.Vongsaiya/Student%20page.html">Student Strategies</a></li>
+            <li><a href="file:///G:/Shared%20drives/2023%20Information%20Software%20Technology/Ariya.Vongsaiya/MyFirstWebsite/2023IST-Website-Ariya.Vongsaiya/Teacher%20Page.html?">Teacher strategies</a></li>
+          </ol>
+        </div>
+
+          <div class="p-4">
+          <h4 class="fst-italic">Elsewhere</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.facebook.com/login/">Facebook</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+  </body>
+
+<footer class="text-body-secondary py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+
+  </div>
+</footer>
+  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"/>
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="https://host-students.com/study-tips-for-students/" class="nav-link p-0 text-body-secondary">Additional articles</a></li>
+          <li class="nav-item mb-2"><a href="file:///G:/Shared%20drives/2023%20Information%20Software%20Technology/Ariya.Vongsaiya/MyFirstWebsite/2023IST-Website-Ariya.Vongsaiya/blog%20index.html" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <a href="file:///G:/Shared%20drives/2023%20Information%20Software%20Technology/Ariya.Vongsaiya/MyFirstWebsite/2023IST-Website-Ariya.Vongsaiya/Subscribe%20page.html">
+   <button class="btn btn-primary"  type="button" >Subscribe</button>
+</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2023 Educational Space. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

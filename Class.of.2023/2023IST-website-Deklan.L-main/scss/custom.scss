@@ -1,0 +1,119 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&family=Merriweather+Sans:wght@300&display=swap');
+
+@import "functions";
+@import "variables";
+@import "variables-dark";
+
+$custom-colors: (
+  "custom-moboblue": #4990E2
+  "custom-mobogreen": #008C4A
+  "custom-dark": #3F3F3F
+  "custom-grey": #999999
+  "custom-light": #EAEAEA
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "maps";
+@import "mixins";
+@import "utilities";
+
+// light mode
+$custom-colors-text: ("custom-dark": #3f3f3f);
+$custom-colors-bg-subtle: ("custom-light": #999999);
+$custom-colors-border-subtle: ("custom-grey": #EAEAEA);
+
+$theme-colors-text: map-merge($theme-colors-text, $custom-colors-text);
+$theme-colors-bg-subtle: map-merge($theme-colors-bg-subtle, $custom-colors-bg-subtle);
+$theme-colors-border-subtle: map-merge($theme-colors-border-subtle, $custom-colors-border-subtle);
+
+// Dark mode
+$custom-colors-text-dark: ("custom-light": #EAEAEA);
+$custom-colors-bg-subtle-dark: ("custom-dark": #3f3f3f);
+$custom-colors-border-subtle-dark: ("custom-grey": #999999);
+
+$theme-colors-text-dark: map-merge($theme-colors-text-dark, $custom-colors-text-dark);
+$theme-colors-bg-subtle-dark: map-merge($theme-colors-bg-subtle-dark, $custom-colors-bg-subtle-dark);
+$theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $custom-colors-border-subtle-dark);
+
+$primary: ("custom-light": #EAEAEA);
+$secondary: ("custom-dark": #3f3f3f);
+$success: ("custom-mobogreen": #008C4A);
+$info: ("custom-moboblue": #4990E2);
+$primary-text: ("custom-light": #EAEAEA);
+// scss-docs-start theme-text-dark-variables
+$primary-text-emphasis-custom:        tint-color($primary, 40%);
+$secondary-text-emphasis-custom:      tint-color($secondary, 40%);
+$success-text-emphasis-custom:        tint-color($success, 40%);
+$info-text-emphasis-custom:           tint-color($info, 40%);
+$warning-text-emphasis-custom:        tint-color($warning, 40%);
+$danger-text-emphasis-custom:         tint-color($danger, 40%);
+$light-text-emphasis-custom:          ("custom-light": #EAEAEA);
+$dark-text-emphasis-custom:           ("custom-dark": #3f3f3f);
+// scss-docs-end theme-text-dark-variables
+
+// scss-docs-start theme-bg-subtle-dark-variables
+$primary-bg-subtle-custom:            shade-color($primary, 80%);
+$secondary-bg-subtle-custom:          shade-color($secondary, 80%);
+$success-bg-subtle-custom:            shade-color($success, 80%);
+$info-bg-subtle-custom:               shade-color($info, 80%);
+$warning-bg-subtle-custom:            shade-color($warning, 80%);
+$danger-bg-subtle-custom:             shade-color($danger, 80%);
+$light-bg-subtle-custom:              $gray-800;
+$dark-bg-subtle-custom:               mix($gray-800, $black);
+// scss-docs-end theme-bg-subtle-dark-variables
+
+// scss-docs-start theme-border-subtle-dark-variables
+$primary-border-subtle-custom:        shade-color($primary, 40%);
+$secondary-border-subtle-custom:      shade-color($secondary, 40%);
+$success-border-subtle-custom:        shade-color($success, 40%);
+$info-border-subtle-custom:           shade-color($info, 40%);
+$warning-border-subtle-custom:        shade-color($warning, 40%);
+$danger-border-subtle-custom:         shade-color($danger, 40%);
+$light-border-subtle-custom:          $gray-700;
+$dark-border-subtle-custom:           $gray-800;
+// scss-docs-end theme-border-subtle-dark-variables
+
+$body-color-custom:                   $gray-500;
+$body-bg-custom:                      $gray-900;
+$body-secondary-color-custom:         rgba($body-color-dark, .75);
+$body-secondary-bg-custom:            $gray-800;
+$body-tertiary-color-custom:          rgba($body-color-dark, .5);
+$body-tertiary-bg-custom:             mix($gray-800, $gray-900, 50%);
+$body-emphasis-color-custom:          $white;
+$border-color-custom:                 $gray-700;
+$border-color-translucent-custom:     rgba($white, .15);
+$headings-color-custom:               inherit;
+$link-color-custom:                   tint-color($primary, 40%);
+$link-hover-color-custom:             shift-color($link-color-dark, -$link-shade-percentage);
+$code-color-custom:                   tint-color($code-color, 40%);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$display-font-family: 'Merriweather sans';
+$display-font-style:  sans-serif;
+$display-font-weight: 300;
+$display-line-height: $headings-line-height;
+
+$heading-font-

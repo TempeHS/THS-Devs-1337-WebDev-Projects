@@ -1,0 +1,68 @@
+DIV {
+border: 1px solid #000;
+}
+#Header {
+height: 100px;
+width: 800px;
+margin-right: auto;
+margin-left: auto;
+background: url(images/banner.png) no-repeat;
+color:blue;
+}
+
+#MainContext {
+width: 800px;
+margin-right: auto;
+margin-left: auto;
+}
+#Footer { 
+width: 802px ;
+margin-right: auto;
+margin-left: auto;
+height: 50px;
+border: lpx solid #fff;
+}
+
+#FooterLeft { 
+float: left;
+width: 399px; /*49.5%*/
+height: 50px;
+border: lpx solid green;
+}
+
+#FooterRight { 
+float: right;
+width:399px; /*49.5%*/
+height: 50px;
+border: lpx solid red;
+}
+#{
+  margin: 0;
+  padding: 0;
+  font-family: montserrat, sans-serif;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  
+  padding: 20px 40px;
+  border-radius: 8px;
+  color: #212121;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
