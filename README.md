@@ -13,6 +13,6 @@ This task requires students to design and develop a responsive website that supp
 ## Class of 2024
 1. [Kelvin A](\THS-Devs-1337-WebDev-Projects\Class.of.2024\Kelvin.A-main\index.html)
 2. [Kevin T](\THS-Devs-1337-WebDev-Projects\Class.of.2024\Kevin.T-main\index.html)
-3. [Khanh N](\THS-Devs-1337-WebDev-Projects\Class.of.2024\Khanh.N-main\index.html)
+3. [Khanh N](\THS-Devs-1337-WebDev-Projects\Class.of.2024\Khanh.N-main\Index.html)
 4. [Michael L](\THS-Devs-1337-WebDev-Projects\Class.of.2024\Michael.L-main\index.html)
 5. [Zoe R](\THS-Devs-1337-WebDev-Projects\Class.of.2024\Zoe.R-main\index.html)
