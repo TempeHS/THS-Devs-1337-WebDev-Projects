@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freedom Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- START TOP NAVIGATION -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/Compressed/logo.png" alt="Logo" height="110"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link inactive"><i>Game Engines</i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Help
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="support.html">About Us</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="support.html">Contact</a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://docs.google.com/forms/d/e/1FAIpQLSducJ83C0lbm2RowHC610F4DLpPeYCZc1ES11dZsgqVJDfA0g/viewform?usp=pp_url">Survey</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tutorial.html">Tutorial</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="SEARCH">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- END TOP NAVIGATION -->
+
+    <!--START TITLE-->
+    <header>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis">Code-For-Dummies</h1>
+            <p class="fs-5 text-body-secondary">Learn important coding skills with our market-breaking tutorials
+            </p>
+        </div>
+    </header>
+    <!--END TITLE-->
+
+    <!-- START BUTTON SELECTION FOR TUTORIAL -->
+
+    <button type="button" class="btn btn-primary position-relative" onclick="myFunction()">
+        Print
+    </button>
+    <button type="button" class="btn btn-primary position-relative">
+        Input
+    </button>
+    <!-- END BUTTON SELECTION FOR TUTORIAL -->
+
+    <!-- START PRINT STATEMENT -->
+    <div class="container">
+        <h1>Printing "Hello World" in Lua</h1>
+        <p>The following Lua code prints "Hello World" to the console:</p>
+        <code>print("Hello World")</code>
+        <h2>Explanation of the Code</h2>
+        <p>
+            <strong>print Function</strong>:<br>
+            The <code>print</code> function in Lua is used to output text or other data to the standard output,
+            typically
+            the
+            console or terminal. It is a built-in function in Lua, which means you do not need to import or require any
+            libraries to use it.
+        </p>
+        <p>
+            <strong>Parentheses <code>()</code></strong>:<br>
+            The parentheses are used to pass arguments to the <code>print</code> function. In this case, the argument is
+            the
+            string <code>"Hello World"</code>.
+        </p>
+        <p>
+            <strong>String <code>"Hello World"</code></strong>:<br>
+            The text <code>"Hello World"</code> is a string literal in Lua. A string literal is a sequence of characters
+            enclosed in double quotes (<code>"</code>). In Lua, you can also use single quotes (<code>'</code>), but
+            double
+            quotes are more common for strings that include spaces.
+        </p>
+
+        <h2>Step-by-Step Execution</h2>
+        <p>
+            When the Lua interpreter executes the code <code>print("Hello World")</code>, it calls the
+            <code>print</code>
+            function.
+            The <code>print</code> function takes the string <code>"Hello World"</code> as its argument.
+            The function then outputs the string to the console or terminal, displaying the text
+            <code>Hello World</code> to
+            the
+            user.
+        </p>
+        <p>You should see the output <code>Hello World</code> displayed in the terminal.</p>
+    </div>
+    <!-- END PRINT STATEMENT -->
+
+    <!-- BEGIN FOOTER -->
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span
+                        property="dct:title">Freedom
+                        Code</span> by <span property="cc:attributionName">Harry Pham</span> is licensed under <a
+                        href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank"
+                        rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a>
+                </p>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About Us</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="#">Creator</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Purpose</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Job Application</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>History</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="#">Humble Beginnings</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Rocky Development</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Release</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Present</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Related Content</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary text-decoration-none" href="#">Youtube</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Discord Server</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Other Website</a></li>
+                    <li><a class="link-secondary text-decoration-none" href="#">Other Website</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- DO NOT DELETE ANYTHING BELOW THIS LINE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+
+        </script>
+</body>
+
+</html>
